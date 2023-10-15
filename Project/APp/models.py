@@ -8,3 +8,11 @@ class StudentModel(models.Model):
     
     def __str__(self) -> str:
         return f"{self.Name}"
+    
+class Teacher(models.Model):
+    Name = models.CharField(max_length=100)
+    Age = models.IntegerField()
+    Subject = models.CharField(max_length=100)
+    
+    def __str__(self) -> str:
+        return f"{self.Name}"
