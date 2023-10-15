@@ -5,3 +5,6 @@ class StudentModel(models.Model):
     Age = models.IntegerField()
     Subject = models.CharField(max_length=100)
     Marks = models.CharField(max_length=100)
+    
+    def __str__(self) -> str:
+        return f"{self.Name}"
