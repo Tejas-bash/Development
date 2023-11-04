@@ -18,3 +18,5 @@ class Teacher(models.Model):
         return f"{self.Name}"
     
 # New Comment Has been Added
+
+# Looking for something New
